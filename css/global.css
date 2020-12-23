@@ -29,6 +29,11 @@ body {
 	background-color: papayawhip;
 }
 
+canvas {
+	background-color: white;
+	border: 1px solid black;
+}
+
 .anchor {
 	display: block;
 	position: relative;
@@ -72,6 +77,23 @@ body {
 .page {
 	max-width: 1024px;
 	margin: auto;
+}
+
+.gallery ul {
+	display: table-cell;
+	text-align: center;
+	list-style-type: none;
+	vertical-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery li {
+	display: inline-block;
+}
+
+.gallery img {
+	max-width: 333px;
 }
 
 .footer {

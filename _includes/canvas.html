@@ -2,4 +2,16 @@
 
 <h2>Canvas</h2>
 
-TODO
+<p>Canvas can be used very flexible to draw shapes, images, or text.</p>
+
+<canvas id="myCanvas" width="333" height="200"></canvas>
+
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.font = "30px Arial";
+	ctx.fillText("This is art. Or not?", 10, 50);
+	ctx.beginPath();
+	ctx.arc(140, 120, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+</script> 
