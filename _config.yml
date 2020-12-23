@@ -1,0 +1,39 @@
+environment: production
+
+# Directories
+source:          .
+destination:     _site
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+collections_dir: _collections
+
+# Collections
+# collections:
+#   software:
+#     output: false
+
+# General
+title: Avenue
+description: > # this means to ignore newlines
+  TODO
+baseurl: "" # must be empty string
+permalink: pretty
+markdown: kramdown
+
+# Compilation
+liquid:
+  strict_variables: true
+  strict_filters: true
+
+# Excludes
+exclude:
+  - .gitignore
+  - .bundle
+  - .github
+  - README.md
+  - docs
+  - vendor
+  - Gemfile
+  - Gemfile.lock
