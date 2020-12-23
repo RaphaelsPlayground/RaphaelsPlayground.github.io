@@ -1,31 +1,38 @@
 ---
 layout: base
-title: RaphaelsPlayground
+title: "Raphael's Playground"
 ---
 
 <nav class='navbar'>
 <ul>
-	<li><a href="#">Point A</a></li>
-	<li><a href="#">Point B</a></li>
-	<li><a href="#">Point C</a></li>
+	<li><a onclick='window.scrollTo({ top: 0, behavior: 'smooth' });' href='javascript:void(0);'>Home</a></li>
+	<li><a href='#images'>Images</a></li>
+	<li><a href='#buttons'>Buttons</a></li>
+	<li><a href='#dropdowns'>Dropdowns</a></li>
+	<li><a href='#canvas'>Canvas</a></li>
+	<li><a href='#iframe'>iFrame</a></li>
+	<li><a href='#carousel'>Carousel</a></li>
+	<li><a href='#generated'>Generated</a></li>
+	<li><a href='#videos'>Videos</a></li>
 </ul>
 </nav>
 
+
+
 <div class='page'>
 
-<b>TODO</b>
-<ol>
-	<li>Standard text (welcome message)</li>
-	<li>Images</li>
-	<li>Text embedded in images</li>
-	<li>Buttons (with text, embedded text, icons)</li>
-	<li>Video</li>
-	<li>Carousel with pictures</li>
-	<li>Canvas with text and images</li>
-	<li>Dropdowns</li>
-	<li>iFrame</li>
-	<li>JavaScript generated contents (text and buttons)</li>
-</ol>
+	<h1>Raphael's Playground</h1>
+
+	<p>Welcome to Raphael's Playground Web site! He uses this Web site to test things.</p>
+
+	{%- include images.html -%}
+	{%- include buttons.html -%}
+	{%- include dropdowns.html -%}
+	{%- include canvas.html -%}
+	{%- include iframe.html -%}
+	{%- include carousel.html -%}
+	{%- include generated.html -%}
+	{%- include videos.html -%}
 
 </div> <!-- page -->
 
