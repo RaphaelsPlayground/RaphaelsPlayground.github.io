@@ -15,9 +15,9 @@ collections_dir: _collections
 #     output: false
 
 # General
-title: Avenue
+title: Raphael's Playground
 description: > # this means to ignore newlines
-  TODO
+  This Web page is for testing purposes.
 baseurl: "" # must be empty string
 permalink: pretty
 markdown: kramdown
@@ -37,3 +37,4 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - LICENSE
