@@ -97,6 +97,11 @@ canvas {
 	max-width: 333px;
 }
 
+.line {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 .btn {
 	background-color: lightgray;
 	padding: 0.25rem;
@@ -123,6 +128,11 @@ a.btn:hover {
 	background-size: 13pt 13pt;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.social img {
+	width: 32px;
+	height: 32px;
 }
 
 .footer {

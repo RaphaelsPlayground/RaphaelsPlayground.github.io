@@ -4,14 +4,25 @@
 
 <p>Canvas can be used very flexible to draw shapes, images, or text.</p>
 
-<canvas id="myCanvas" width="333" height="200"></canvas>
+<canvas id='myCanvas' width='800' height='600'></canvas>
 
 <script>
-	var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
-	ctx.font = "30px Arial";
-	ctx.fillText("This is art. Or not?", 10, 50);
+	var c = document.getElementById('myCanvas');
+	var ctx = c.getContext('2d');
+
+	const image = document.getElementById('an_image');
+	image.addEventListener('load', e => {
+		ctx.drawImage(image, 160, 450, 400, 400, 300, 100, 350, 357);
+	});
+
+	ctx.font = '30px Arial';
+	ctx.fillText('This is art. Or not?', 10, 50);
+	ctx.font = '30px Times';
+	ctx.fillText('Off-road vehicle', 400, 500);
 	ctx.beginPath();
 	ctx.arc(140, 120, 40, 0, 2 * Math.PI);
 	ctx.stroke();
+
+
+
 </script> 

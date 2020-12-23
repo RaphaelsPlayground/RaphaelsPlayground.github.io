@@ -8,17 +8,68 @@
 
 <p>There is a multitude of ways to implement buttons.</p>
 
-<div class='gallery'>
-	<ul>
-		<li><button onclick='btn_fct();' class='btn' title='<button>'>Add to cart!</button></li>
-		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as button'>Add to cart!</a></li>
-		<li><div onclick='btn_fct();' class='btn' title='<div> as button'>Add to cart!</div></li>
-		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as button with icon'><i class='ico-a'></i>Add to cart!</a></li>
-		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as clickable icon'><i class='ico-a'></i></a></li>
-	</ul>
+<div class='line'>
+	&lt;button&gt; as button: <button onclick='btn_fct();' class='btn'>Add to cart!</button>
+</div>
+
+<div class='line'>
+	&lt;button&gt; as button with title: <button onclick='btn_fct();' class='btn' title='Buy item.'>Add to cart!</button>
+</div>
+
+<div class='line'>
+	&lt;a&gt; as button: <a href='javascript:void(0);' onclick='btn_fct();' class='btn' title=''>Add to cart!</a>
+</div>
+
+<div class='line'>
+	&lt;div&gt; as button: <div onclick='btn_fct();' class='btn' style='display: inline-block;'>Add to cart!</div>
+</div>
+
+<div class='line'>
+	&lt;div&gt; as button with icon: <a href='javascript:void(0);' onclick='btn_fct();' class='btn'><i class='ico-a'></i>Add to cart!</a>
+</div>
+
+<div class='line'>
+	&lt;div&gt; as button with only an icon:<a href='javascript:void(0);' onclick='btn_fct();' class='btn'><i class='ico-a'></i></a>
 </div>
 
 <h3>Icons</h3>
+
+<p>Especially social media buttons are often without any text.</p>
+
+<div class='line'>
+	Icon with arbitrary file name and link:
+	<a href='https://raphaelmenges.github.io/' class='social'>
+		<img src='assets/icons/social-a.png'>
+	</a>
+</div>
+
+<div class='line'>
+	Icon with arbitrary file name and link but correct title:
+	<a href='https://raphaelmenges.github.io/' class='social' title='Google Plus'>
+		<img src='assets/icons/social-b.png'>
+	</a>
+</div>
+
+<div class='line'>
+	Icon with arbitrary file name but correct link:
+	<a href='https://www.instagram.com/' class='social'>
+		<img src='assets/icons/social-c.png'>
+	</a>
+</div>
+
+<div class='line'>
+	Icon with meaningful file name but incorrect link and title:
+	<a href='https://www.xing.com/' class='social' title='Xing'>
+		<img src='assets/icons/linkedin.png'>
+	</a>
+</div>
+
+<div class='line'>
+	Icon with meaningful file name, title, and correct link:
+	<a href='https://twitter.com/' class='social' title='Twitter'>
+		<img src='assets/icons/twitter.png'>
+	</a>
+</div>
 
 <script>
 	function btn_fct() {
