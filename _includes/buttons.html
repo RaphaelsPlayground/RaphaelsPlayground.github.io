@@ -2,14 +2,26 @@
 
 <h2>Buttons</h2>
 
+<p>Probably every modern Web site uses some kind of button.</p>
+
+<h3>Button Types</h3>
+
 <p>There is a multitude of ways to implement buttons.</p>
 
 <div class='gallery'>
 	<ul>
-		<li><button>Click me!</button></li>
-		<li>TODO a tag button</li>
-		<li>TODO div button with onclick?</li>
-		<li>TODO a tag button with text and icon</li>
-		<li>TODO a tag button with icon</li>
+		<li><button onclick='btn_fct();' class='btn' title='<button>'>Add to cart!</button></li>
+		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as button'>Add to cart!</a></li>
+		<li><div onclick='btn_fct();' class='btn' title='<div> as button'>Add to cart!</div></li>
+		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as button with icon'><i class='ico-a'></i>Add to cart!</a></li>
+		<li><a href='javascript:void(0);' onclick='btn_fct();' class='btn' title='<a> as clickable icon'><i class='ico-a'></i></a></li>
 	</ul>
 </div>
+
+<h3>Icons</h3>
+
+<script>
+	function btn_fct() {
+		alert('Button clicked!');
+	}
+</script> 
