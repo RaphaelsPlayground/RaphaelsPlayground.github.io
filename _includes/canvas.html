@@ -6,23 +6,50 @@
 
 <canvas id='myCanvas' width='800' height='600'></canvas>
 
+<div class='gallery'>
+	<button class='btn' onclick='drawCanvas("This could be fetched from a database.");'>Hello</button>
+	<button class='btn' onclick='drawCanvas("That could be live ticker.");'>Hello</button>
+	<button class='btn' onclick='drawCanvas("This could be random text generated from JavaScript.");'>Hello</button>
+</div>
+
 <script>
+
+	// Global variables required to draw on the canvas
 	var c = document.getElementById('myCanvas');
 	var ctx = c.getContext('2d');
 
+	// Draw canvas when image is loaded
 	const image = document.getElementById('an_image');
-	image.addEventListener('load', e => {
-		ctx.drawImage(image, 160, 450, 400, 400, 300, 100, 350, 357);
-	});
+		image.addEventListener('load', e => {
+			drawCanvas('Click on the buttons below!');
+		});
 
-	ctx.font = '30px Arial';
-	ctx.fillText('This is art. Or not?', 10, 50);
-	ctx.font = '30px Times';
-	ctx.fillText('Off-road vehicle', 400, 500);
-	ctx.beginPath();
-	ctx.arc(140, 120, 40, 0, 2 * Math.PI);
-	ctx.stroke();
+	// How the canvas is drawn
+	function drawCanvas(generated_text) {
+		ctx.clearRect(0, 0, c.width, c.height);
 
+		// Image
+		if(image) {
+			ctx.drawImage(image, 160, 450, 400, 400, 300, 100, 350, 357);
+		}
 
+		// Caption of image
+		ctx.font = '30px Times';
+		ctx.fillText('Off-road vehicle', 400, 500);
 
+		// Static text
+		ctx.font = '30px Arial';
+		ctx.fillText('This is art. Or not?', 10, 50);
+
+		// A circle
+		ctx.beginPath();
+		ctx.arc(140, 120, 40, 0, 2 * Math.PI);
+		ctx.stroke();
+
+		// Generated text
+		ctx.font = '30px Comic Sans MS';
+		ctx.fillStyle = 'red';
+		ctx.fillText(generated_text, 10, 570);
+		ctx.fillStyle = 'black';
+	}
 </script> 
