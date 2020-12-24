@@ -120,7 +120,7 @@ a.btn:hover {
 	background-color: white;
 }
 
-.ico-a {
+.ico-btn {
 	background-image: url(../assets/icons/a.png);
 	content: "";
 	padding-left: 10pt;
@@ -130,9 +130,15 @@ a.btn:hover {
 	background-position: center;
 }
 
-.social img {
+.ico img {
 	width: 32px;
 	height: 32px;
+	padding-left: 5pt;
+	padding-right: 5pt;
+}
+
+a.ico {
+	text-decoration: none;
 }
 
 .footer {

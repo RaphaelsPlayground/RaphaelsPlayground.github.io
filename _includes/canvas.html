@@ -7,9 +7,9 @@
 <canvas id='myCanvas' width='800' height='600'></canvas>
 
 <div class='gallery'>
-	<button class='btn' onclick='drawCanvas("This could be fetched from a database.");'>Hello</button>
-	<button class='btn' onclick='drawCanvas("That could be live ticker.");'>Hello</button>
-	<button class='btn' onclick='drawCanvas("This could be random text generated from JavaScript.");'>Hello</button>
+	<button class='btn' onclick='drawCanvas("This could be fetched from a database.");'>Press this!</button>
+	<button class='btn' onclick='drawCanvas("That could be live ticker.");'>Or this!</button>
+	<button class='btn' onclick='drawCanvas("This could be random text generated from JavaScript.");'>Or that!</button>
 </div>
 
 <script>
@@ -30,12 +30,12 @@
 
 		// Image
 		if(image) {
-			ctx.drawImage(image, 160, 450, 400, 400, 300, 100, 350, 357);
+			ctx.drawImage(image, 30, 150, 400, 400, 300, 100, 350, 357);
 		}
 
 		// Caption of image
 		ctx.font = '30px Times';
-		ctx.fillText('Off-road vehicle', 400, 500);
+		ctx.fillText('Family vehicle', 400, 500);
 
 		// Static text
 		ctx.font = '30px Arial';
